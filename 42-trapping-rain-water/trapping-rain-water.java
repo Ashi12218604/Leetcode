@@ -7,20 +7,29 @@ class Solution {
             if(height[l]<height[r])
             {
                 if(lmax>height[l])
-                total+=lmax-height[l];
+                {
+                    total+=lmax-height[l];
+                }
                 else
-                lmax=height[l];
-                l=l+1;         
+                
+                    lmax=height[l];
+                    l++;
+                
             }
             else
             {
-                 if(rmax>height[r])
-                total+=rmax-height[r];
+                if(rmax>height[r])
+                {
+                    total+=rmax-height[r];
+                }
                 else
-                rmax=height[r];
-                r=r-1; 
+                
+                    rmax=height[r];
+                    r--;
+                
             }
         }
         return total;
+        
     }
 }
