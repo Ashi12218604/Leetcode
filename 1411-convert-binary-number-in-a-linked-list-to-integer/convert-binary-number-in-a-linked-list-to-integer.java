@@ -23,7 +23,7 @@ class Solution {
        for(int i=0;i<l;i++)
        {
         arr[i]=head.val;
-        sum+=arr[i]*Math.pow(2,j);
+        sum += arr[i] * (1 << j);
         head=head.next;
          j--;
        }
